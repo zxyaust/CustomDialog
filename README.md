@@ -6,6 +6,7 @@
 
 使用方法
 ![此处输入图片的描述][1]
+依赖compile 'com.z:dialoglibrary:1.1.0'
 ```
 
 package z.loadingdialog;
