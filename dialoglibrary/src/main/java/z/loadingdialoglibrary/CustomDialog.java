@@ -7,6 +7,7 @@ import android.view.Window;
 
 /**
  * Created by max on 2016/8/11.
+ * 用法:继承此类重写两个方法,或者是直接new出来,然后重新两个方法,使用非常方便,
  */
 public abstract class CustomDialog {
 
@@ -28,6 +29,12 @@ public abstract class CustomDialog {
     public void show(boolean canceledOnTouchOutside) {
         alertDialog.setCanceledOnTouchOutside(canceledOnTouchOutside);
         alertDialog.show();
+    }
+
+    public void cancel() {
+        if (alertDialog != null) {
+            alertDialog.cancel();
+        }
     }
 
     /**
